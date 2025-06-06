@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header-container"></div>
+
+    <section class="sobre-nos">
+      <div>
+        <h1>Sobre Nós</h1>
+        <p>
+          Somos uma comunidade que valoriza a diversão e a organização no nosso
+          servidor, garantindo um ambiente seguro para todos se conhecerem.
+          Ajude-nos a criar um espaço na internet onde as pessoas possam
+          compartilhar seus animes favoritos, jogos, músicas e outros
+          interesses. Faça novas amizades e conheça pessoas de todo o Brasil!
+          Aqui é onde sua jornada começa.
+        </p>
+      </div>
+    </section>
+
+    <section class="equipe">
+      <div>
+        <h1>Equipe</h1>
+      </div>
+
+      <div class="equipe-container">
+        <div class="perfil">
+          <img src="assets/imagens/perfis/ofc_kaiq.png" alt="Perfil 1" />
+          <h2>CEO</h2>
+          <p>@ofc_kaiq</p>
+          <a href="https://discord.com/users/730191078246055957" target="_blank"
+            >Ver perfil</a
+          >
+        </div>
+
+        <div class="perfil">
+          <img src="assets/imagens/perfis/juregek.png" alt="Perfil 2" />
+          <h2>Executivo</h2>
+          <p>@juregekk</p>
+          <a href="https://discord.com/users/553253158130810890" target="_blank"
+            >Ver perfil</a
+          >
+        </div>
+
+        <div class="perfil">
+          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 3" />
+          <h2>Líder de área</h2>
+          <p>@kirbyy.sz</p>
+          <a
+            href="https://discord.com/users/1222018083498233896"
+            target="_blank"
+            >Ver perfil</a
+          >
+        </div>
+
+        <div class="perfil">
+          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 4" />
+          <h2>Líder da área</h2>
+          <p>@luckke</p>
+          <a href="https://discord.com/users/445361001056043008" target="_blank"
+            >Ver perfil</a
+          >
+        </div>
+
+        <div class="perfil">
+          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 5" />
+          <h2>Moderador</h2>
+          <p>@xuri_perceval</p>
+          <a href="https://discord.com/users/445361001056043008" target="_blank"
+            >Ver perfil</a
+          >
+        </div>
+
+        <div class="perfil">
+          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 5" />
+          <h2>Moderador</h2>
+          <p>@vladmto</p>
+          <a href="https://discord.com/users/630107584719880240" target="_blank"
+            >Ver perfil</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer-placeholder"></footer>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+        })
+        .catch((error) => {
+          console.error("Erro ao carregar o footer:", error);
+          document.getElementById("footer-placeholder").innerHTML =
+            "Erro ao carregar o footer.";
+        });
+      // Carregar o header externo dinamicamente
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
