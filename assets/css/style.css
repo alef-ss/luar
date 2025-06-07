@@ -1,3 +1,104 @@
+/* Reset básico */
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header externo carregado via JS */
+#header-container {
+  width: 100%;
+}
+
+/* Seção com contadores */
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #dbeafe, #e0f2fe);
+}
+
+.conteudo > div {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudo h1 {
+  font-size: 1.2rem;
+  color: #1d4ed8;
+}
+
+.conteudo h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Seção com convite */
+.texto-convite {
+  padding: 80px 20px;
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+}
+
+.texto-convite h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.texto-convite p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.texto-convite a {
+  text-decoration: none;
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.texto-convite a:hover {
+  background-color: #2563eb;
+}
+
+/* Footer placeholder */
+#footer-placeholder {
+  background-color: #111827;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .conteudo > div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texto-convite h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto-convite p {
+    font-size: 1rem;
+  }
 }

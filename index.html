@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header-container"></div>
 
     <!-- banner do servidor -->
-  <!-- <div class="parallax-bg" aria-hidden="true">
+    <!-- <div class="parallax-bg" aria-hidden="true">
     <img src="assets/imagens/one_piece_perfil.webp" alt="imagem-fundo">
   </div> -->
 
-  <!-- seção pro efeito parallax -->
-  <section class="conteudo">
-    <div>
+    <!-- seção pro efeito parallax -->
+    <section class="conteudo">
+      <div>
         <div class="mensagens">
-            <h1>Mensagens do Servidor</h1>
-            <h2>+100.000</h2>
+          <h1>Mensagens do Servidor</h1>
+          <h2>+100.000</h2>
         </div>
         <div class="membros">
-            <h1>Membros</h1>
-            <h2>+3000</h2>
+          <h1>Membros</h1>
+          <h2>+3000</h2>
         </div>
         <div class="staffs">
-            <h1>Staff's</h1>
-            <h2>7</h2>
+          <h1>Staff's</h1>
+          <h2>7</h2>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- seção do texto de convite do servidor -->
-  <section class="texto-convite">
-    <div>
-        <h1>PARTICIPE DA COMUNIDADE HOJE</h1>
-        <p>Somos uma das melhores comunidades que aprecia a diversão e a organização adequada em nosso servidor para garantir um ambiente seguro para todos se conhecerem.</p>
+    <!-- seção do texto de convite do servidor -->
+    <main>
+      <section class="texto-convite hero">
+        <div>
+          <h1>PARTICIPE DA COMUNIDADE HOJE</h1>
+          <p>
+            Somos uma das melhores comunidades que aprecia a diversão e a
+            organização adequada em nosso servidor para garantir um ambiente
+            seguro para todos se conhecerem.
+          </p>
+          <a href="sobreNos.html">Sobre nós</a>
+        </div>
+      </section>
+    </main>
 
-        <a href="sobreNos.html">Sobre nós</a>
-    </div>
-  </section>
+    <footer id="footer-placeholder"></footer>
+    <!-- js pra colocar o footer e o cabeçalho da página -->
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+        })
+        .catch((error) => {
+          console.error("Erro ao carregar o footer:", error);
+          document.getElementById("footer-placeholder").innerHTML =
+            "Erro ao carregar o footer.";
+        });
 
-
-  <footer id="footer-placeholder"></footer>
-  <!-- js pra colocar o footer e o cabeçalho da página -->
-  <script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('footer-placeholder').innerHTML = html;
-    })
-    .catch(error => {
-      console.error('Erro ao carregar o footer:', error);
-      document.getElementById('footer-placeholder').innerHTML = 'Erro ao carregar o footer.';
-    });
-    // Carregar o header externo dinamicamente
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      });
-</script>
-</body>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>
