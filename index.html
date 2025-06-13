@@ -1,33 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Luar</title>
   </head>
   <body>
-    <div id="header-container"></div>
+    <!-- Header melhorado -->
+    <header id="header-container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="assets/imagens/logo-teste.webp" alt="Logo da Comunidade">
+        </div>
+        
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="sobreNos.html">Sobre Nós</a></li>
+            <li><a href="vips.html">VIPs</a></li>
+          </ul>
+        </nav>
+        
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="cta-button">
+          <a href="https://discord.gg/luar" class="btn-join">Junte-se</a>
+        </div>
+      </div>
+      
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="sobreNos.html">Sobre Nós</a></li>
+          <li><a href="vips.html">VIPs</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- banner do servidor -->
-    <!-- <div class="parallax-bg" aria-hidden="true">
-    <img src="assets/imagens/one_piece_perfil.webp" alt="imagem-fundo">
-  </div> -->
+    <!-- banner do servidor com parallax melhorado -->
+    <div class="parallax-container">
+      <div class="parallax-bg" aria-hidden="true">
+        <div class="overlay"></div>
+        <img src="assets/imagens/logo-teste.webp" alt="Comunidade incrível" />
+      </div>
+      <div class="parallax-content">
+        <h1>Bem-vindo à nossa Comunidade</h1>
+        <p>Junte-se a milhares de membros apaixonados</p>
+      </div>
+    </div>
 
     <!-- seção pro efeito parallax -->
     <section class="conteudo">
-      <div>
-        <div class="mensagens">
-          <h1>Mensagens do Servidor</h1>
-          <h2>+100.000</h2>
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="mensagens">
+            <h1>Mensagens do Servidor</h1>
+            <h2>+100.000</h2>
+          </div>
         </div>
-        <div class="membros">
-          <h1>Membros</h1>
-          <h2>+3000</h2>
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="membros">
+            <h1>Membros</h1>
+            <h2>+3000</h2>
+          </div>
         </div>
-        <div class="staffs">
-          <h1>Staff's</h1>
-          <h2>7</h2>
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="staffs">
+            <h1>Staff's</h1>
+            <h2>7</h2>
+          </div>
         </div>
       </div>
     </section>
@@ -35,37 +89,82 @@
     <!-- seção do texto de convite do servidor -->
     <main>
       <section class="texto-convite hero">
-        <div>
+        <div class="container">
           <h1>PARTICIPE DA COMUNIDADE HOJE</h1>
           <p>
             Somos uma das melhores comunidades que aprecia a diversão e a
             organização adequada em nosso servidor para garantir um ambiente
             seguro para todos se conhecerem.
           </p>
-          <a href="sobreNos.html">Sobre nós</a>
+          <div class="buttons">
+            <a href="sobreNos.html" class="btn-primary">Sobre nós</a>
+            <a href="https://discord.gg/luar" class="btn-secondary">Entrar no Discord</a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer id="footer-placeholder"></footer>
-    <!-- js pra colocar o footer e o cabeçalho da página -->
-    <script>
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById("footer-placeholder").innerHTML = html;
-        })
-        .catch((error) => {
-          console.error("Erro ao carregar o footer:", error);
-          document.getElementById("footer-placeholder").innerHTML =
-            "Erro ao carregar o footer.";
-        });
+    <!-- Footer melhorado -->
+    <footer id="footer-placeholder">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Sobre Nós</h3>
+          <p>Uma comunidade dedicada a criar um ambiente acolhedor e divertido para todos os membros.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="sobreNos.html">Sobre</a></li>
+            <li><a href="vips.html">VIPs</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <div class="social-icons">
+            <a href="https://discord.gg/luar"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Nossa Comunidade. Todos os direitos reservados.</p>
+      </div>
+    </footer>
 
-      fetch("header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
+    <script>
+      // Menu hamburguer para mobile
+      document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+        document.querySelector('.mobile-nav').classList.toggle('active');
+        this.querySelector('i').classList.toggle('fa-times');
+      });
+
+      // Efeito de scroll no header
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header-container");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Fechar menu ao clicar em um link (para mobile)
+      document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          document.querySelector('.mobile-nav').classList.remove('active');
+          document.querySelector('.mobile-menu-btn i').classList.remove('fa-times');
         });
+      });
+
+      // Efeito parallax melhorado
+      window.addEventListener('scroll', function() {
+        const parallax = document.querySelector('.parallax-bg');
+        let scrollPosition = window.pageYOffset;
+        parallax.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+      });
     </script>
   </body>
 </html>
