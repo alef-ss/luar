@@ -1,110 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sobre Nós | Nossa Comunidade</title>
   </head>
   <body>
-    <div id="header-container"></div>
+    <!-- Header Moderno -->
+    <header id="header-container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="assets/imagens/logo-teste.webp" alt="Logo da Comunidade">
+        </div>
+        
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobreNos.html" class="active">Sobre Nós</a></li>
+            <li><a href="vips.html">VIPs</a></li>
+          </ul>
+        </nav>
+        
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="cta-button">
+          <a href="https://discord.gg/luar" class="btn-join">Junte-se</a>
+        </div>
+      </div>
+      
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobreNos.html" class="active">Sobre Nós</a></li>
+          <li><a href="vips.html">VIPs</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Conheça Nossa Comunidade</h1>
+        <p>Uma jornada de conexões, diversão e compartilhamento</p>
+      </div>
+    </section>
+
+    <!-- Sobre Nós -->
     <section class="sobre-nos">
-      <div>
-        <h1>Sobre Nós</h1>
-        <p>
-          Somos uma comunidade que valoriza a diversão e a organização no nosso
-          servidor, garantindo um ambiente seguro para todos se conhecerem.
-          Ajude-nos a criar um espaço na internet onde as pessoas possam
-          compartilhar seus animes favoritos, jogos, músicas e outros
-          interesses. Faça novas amizades e conheça pessoas de todo o Brasil!
-          Aqui é onde sua jornada começa.
-        </p>
+      <div class="container">
+        <div class="section-header">
+          <h2>Sobre Nós</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="sobre-content">
+          <p>
+            Somos uma comunidade que valoriza a diversão e a organização no nosso
+            servidor, garantindo um ambiente seguro para todos se conhecerem.
+            Ajude-nos a criar um espaço na internet onde as pessoas possam
+            compartilhar seus animes favoritos, jogos, músicas e outros
+            interesses.
+          </p>
+          <p>
+            Faça novas amizades e conheça pessoas de todo o Brasil!
+            Aqui é onde sua jornada começa.
+          </p>
+          <div class="destaques">
+            <div class="destaque-box">
+              <i class="fas fa-users"></i>
+              <h3>Comunidade Ativa</h3>
+              <p>+3000 membros interagindo diariamente</p>
+            </div>
+            <div class="destaque-box">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Ambiente Seguro</h3>
+              <p>Moderação ativa para proteger todos</p>
+            </div>
+            <div class="destaque-box">
+              <i class="fas fa-calendar-alt"></i>
+              <h3>Eventos Constantes</h3>
+              <p>Atividades semanais para todos</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Equipe -->
     <section class="equipe">
-      <div>
-        <h1>Equipe</h1>
-      </div>
-
-      <div class="equipe-container">
-        <div class="perfil">
-          <img src="assets/imagens/perfis/ofc_kaiq.png" alt="Perfil 1" />
-          <h2>CEO</h2>
-          <p>@ofc_kaiq</p>
-          <a href="https://discord.com/users/730191078246055957" target="_blank"
-            >Ver perfil</a
-          >
+      <div class="container">
+        <div class="section-header">
+          <h2>Nossa Equipe</h2>
+          <div class="divider"></div>
+          <!-- <p>Conheça as pessoas que tornam esta comunidade possível</p> -->
         </div>
 
-        <div class="perfil">
-          <img src="assets/imagens/perfis/juregek.png" alt="Perfil 2" />
-          <h2>Executivo</h2>
-          <p>@juregekk</p>
-          <a href="https://discord.com/users/553253158130810890" target="_blank"
-            >Ver perfil</a
-          >
-        </div>
+        <div class="equipe-container">
+          <div class="perfil">
+            <div class="perfil-img">
+              <img src="assets/imagens/perfis/ofc_kaiq.png" alt="CEO" />
+              <div class="social-links">
+                <a href="https://discord.com/users/730191078246055957" target="_blank"><i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+            <h3>@ofc_kaiq</h3>
+            <span class="cargo">CEO</span>
+            <p>Fundador e líder da comunidade</p>
+          </div>
 
-        <div class="perfil">
-          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 3" />
-          <h2>Líder de área</h2>
-          <p>@kirbyy.sz</p>
-          <a
-            href="https://discord.com/users/1222018083498233896"
-            target="_blank"
-            >Ver perfil</a
-          >
-        </div>
+          <div class="perfil">
+            <div class="perfil-img">
+              <img src="assets/imagens/perfis/juregek.png" alt="Executivo" />
+              <div class="social-links">
+                <a href="https://discord.com/users/553253158130810890" target="_blank"><i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+            <h3>@juregekk</h3>
+            <span class="cargo">Executivo</span>
+            <p>Gestão e desenvolvimento</p>
+          </div>
 
-        <div class="perfil">
-          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 4" />
-          <h2>Líder da área</h2>
-          <p>@luckke</p>
-          <a href="https://discord.com/users/445361001056043008" target="_blank"
-            >Ver perfil</a
-          >
-        </div>
+          <div class="perfil">
+            <div class="perfil-img">
+              <img src="assets/imagens/perfis/logo-teste.webp" alt="Líder de área" />
+              <div class="social-links">
+                <a href="https://discord.com/users/1222018083498233896" target="_blank"><i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+            <h3>@kirbyy.sz</h3>
+            <span class="cargo">Líder de Área</span>
+            <p>Coordenação de atividades</p>
+          </div>
 
-        <div class="perfil">
-          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 5" />
-          <h2>Moderador</h2>
-          <p>@xuri_perceval</p>
-          <a href="https://discord.com/users/445361001056043008" target="_blank"
-            >Ver perfil</a
-          >
-        </div>
+          <div class="perfil">
+            <div class="perfil-img">
+              <img src="assets/imagens/perfis/logo-teste.webp" alt="Líder de área" />
+              <div class="social-links">
+                <a href="https://discord.com/users/445361001056043008" target="_blank"><i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+            <h3>@luckke</h3>
+            <span class="cargo">Líder de Área</span>
+            <p>Organização de eventos</p>
+          </div>
 
-        <div class="perfil">
-          <img src="assets/imagens/perfis/logo-teste.webp" alt="Perfil 5" />
-          <h2>Moderador</h2>
-          <p>@vladmto</p>
-          <a href="https://discord.com/users/630107584719880240" target="_blank"
-            >Ver perfil</a
-          >
+          <div class="perfil">
+            <div class="perfil-img">
+              <img src="assets/imagens/perfis/logo-teste.webp" alt="Moderador" />
+              <div class="social-links">
+                <a href="https://discord.com/users/445361001056043008" target="_blank"><i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+            <h3>@xuri_perceval</h3>
+            <span class="cargo">Moderador</span>
+            <p>Manutenção da comunidade</p>
+          </div>
+
+          <div class="perfil">
+            <div class="perfil-img">
+              <img src="assets/imagens/perfis/logo-teste.webp" alt="Moderador" />
+              <div class="social-links">
+                <a href="https://discord.com/users/630107584719880240" target="_blank"><i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+            <h3>@vladmto</h3>
+            <span class="cargo">Moderador</span>
+            <p>Suporte aos membros</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer id="footer-placeholder"></footer>
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Pronto para se juntar a nós?</h2>
+        <p>Faça parte desta comunidade incrível e comece sua jornada hoje mesmo!</p>
+        <a href="https://discord.gg/luar" class="btn-cta">Entrar no Discord</a>
+      </div>
+    </section>
+
+    <!-- Footer Moderno -->
+    <footer id="footer-placeholder">
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="logo">
+            <img src="assets/imagens/logo-teste.webp" alt="Logo da Comunidade">
+          </div>
+          <p>Uma comunidade dedicada a criar um ambiente acolhedor e divertido para todos os membros.</p>
+          <div class="social-icons">
+            <a href="https://discord.gg/luar"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobreNos.html">Sobre Nós</a></li>
+            <li><a href="vips.html">VIPs</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <ul class="contact-info">
+            <li><i class="fab fa-discord"></i> discord.gg/luar</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Luar. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
     <script>
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById("footer-placeholder").innerHTML = html;
-        })
-        .catch((error) => {
-          console.error("Erro ao carregar o footer:", error);
-          document.getElementById("footer-placeholder").innerHTML =
-            "Erro ao carregar o footer.";
+      // Menu hamburguer para mobile
+      document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+        document.querySelector('.mobile-nav').classList.toggle('active');
+        this.querySelector('i').classList.toggle('fa-times');
+      });
+
+      // Fechar menu ao clicar em um link (para mobile)
+      document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          document.querySelector('.mobile-nav').classList.remove('active');
+          document.querySelector('.mobile-menu-btn i').classList.remove('fa-times');
         });
-      // Carregar o header externo dinamicamente
-      fetch("header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
+      });
+
+      // Efeito de scroll no header
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header-container");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Animação ao rolar a página
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.perfil, .destaque-box');
+        
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if(elementPosition < screenPosition) {
+            element.classList.add('animated');
+          }
         });
+      };
+
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
     </script>
   </body>
 </html>

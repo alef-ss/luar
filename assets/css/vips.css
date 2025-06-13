@@ -1,0 +1,111 @@
+/* Import common styles */
+@import url('style.css');
+
+/* VIPs page specific styles */
+
+/* Container for VIPs section */
+.vips {
+  max-width: 1200px;
+  margin: 100px auto 60px; /* margin top to avoid header overlap */
+  padding: 0 20px;
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* VIPs title */
+.vips h1 {
+  font-size: 3rem;
+  color: var(--primary-dark);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* VIPs description paragraphs */
+.vips p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Divider line between VIP plans */
+.vip-divider {
+  border: none;
+  border-top: 2px solid var(--primary-color);
+  margin: 40px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Each VIP plan box */
+.vip-plano {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vip-plano:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* VIP plan title */
+.vip-plano h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* VIP plan description text */
+.vip-plano p {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+/* Highlighted span inside VIP plan descriptions */
+.vip-plano span {
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+/* VIP plan benefits list */
+.vip-plano ul {
+  list-style: disc inside;
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .vips h1 {
+    font-size: 2.5rem;
+  }
+  .vip-plano {
+    padding: 20px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vips h1 {
+    font-size: 2rem;
+  }
+  .vip-plano {
+    padding: 15px 20px;
+  }
+  .vip-plano h2 {
+    font-size: 1.5rem;
+  }
+  .vip-plano p, .vip-plano ul {
+    font-size: 0.9rem;
+  }
+}
